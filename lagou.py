@@ -1,3 +1,5 @@
+# coding=utf-8
+
 import random
 import time
 
@@ -80,7 +82,8 @@ def main():
     lang_name = 'python'
     wb = Workbook()  # 打开 excel 工作簿
     conn = get_conn()  # 建立数据库连接  不存数据库 注释此行
-    for i in ['北京', '上海', '广州', '深圳', '杭州']:  # 五个城市
+    # for i in ['北京', '上海', '广州', '深圳', '杭州']:  # 五个城市
+    for i in ['天津']:  # 五个城市
         page = 1
         ws1 = wb.active
         ws1.title = lang_name
