@@ -17,6 +17,9 @@ import sys
 from bs4 import BeautifulSoup
 import re
 import requests
+
+#不要使用pandas来处理Excel文件, 因为还是依赖xlrd的. 请直接使用openpyxl
+#xlrd/xlwt不能处理Excel 2007之后的格式, 也就是说最大一张数据表仅支持65535行.
 import xlwt
 
 # 得到页面全部内容
